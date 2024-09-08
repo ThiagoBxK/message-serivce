@@ -1,0 +1,13 @@
+{
+  "name": "message-serivce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --watch",
+    "dev": "node --watch ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
