@@ -2,6 +2,8 @@
 # Pub/Sub Pattern
 
 
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
 Implementação do patter Pub/Sub
 ## Rodando localmente
 
