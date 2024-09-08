@@ -50,10 +50,16 @@ class ChatService {
 
   notify(channelName: string, subscriber: IUser, message: string) {
     this.channels.get(channelName)?.clients.forEach((client) => {
+      if (client.id === subscriber.id) return;
+
       client.notify(
-        `Mensagem para: (${client.name}): ${message} enviada por ${subscriber.name}`
+        `${client.name}: Recebeu uma mensagem "${message}" enviada por ${subscriber.name} no canal ${channelName}`
       );
     });
+  }
+
+  sendMessage(channelName: string, subscriber: IUser, message: string) {
+    this.notify(channelName, subscriber, message);
   }
 }
 

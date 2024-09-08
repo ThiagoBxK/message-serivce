@@ -9,6 +9,7 @@ const userC = new User(2, "Parker");
 
 chatService.subscribe("Conversas 1", userA);
 chatService.subscribe("Conversas 1", userB);
+chatService.sendMessage("Conversas 1", userA, "Olá");
 chatService.unsubscribe("Conversas 1", userA);
 chatService.subscribe("Conversas 2", userC);
 chatService.subscribe("Conversas 2", userA);
